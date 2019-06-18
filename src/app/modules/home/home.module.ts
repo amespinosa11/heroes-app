@@ -6,9 +6,10 @@ import { HomeComponent } from './home/home.component';
 
 import { MaterialModule } from '../../material.module';
 import { CoreModule } from '../core/core.module';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [HomeComponent, CardComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,

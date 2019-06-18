@@ -6,15 +6,15 @@ import { AppComponent } from './app.component';
 
 import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    //BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
-    //BrowserAnimationsModule,
     NoopAnimationsModule,
     MaterialModule
   ],

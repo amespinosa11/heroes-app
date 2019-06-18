@@ -1,0 +1,12 @@
+.example-card {
+    width: 350px;
+    height: 200px;;
+  }
+  
+.example-header-image {
+  background-size: cover;
+}
+
+.cont {
+  height: 35px;
+}
