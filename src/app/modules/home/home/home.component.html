@@ -1,8 +1,13 @@
 <app-toolbar></app-toolbar>
 
-<div class="container mt-3 d-flex justify-content-center">
+<div class="header-img w-100 d-flex justify-content-center align-items-center">
+    <input [(ngModel)]="heroeName" type="text" class="form-control header-inp" aria-label="Amount (to the nearest dollar)" placeholder="Search by name...">
+</div>
+
+<div class="container d-flex justify-content-center cards-container">
+
     <div class="card-deck d-flex justify-content-center">
-        <div *ngFor="let heroe of heroes">
+        <div *ngFor="let heroe of heroes | search:heroeName">
             <app-card [heroe]="heroe"></app-card>
         </div>
     </div>

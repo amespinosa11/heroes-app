@@ -13,6 +13,8 @@ export class HomeComponent implements OnInit {
 
   heroes: Heroe[];
 
+  heroeName = '';
+
   ngOnInit() {
     this.getHeroes();
   }

@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { MaterialModule } from '../../material.module';
 import { CoreModule } from '../core/core.module';
 import { CardComponent } from './card/card.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [HomeComponent, CardComponent],
@@ -14,7 +15,8 @@ import { CardComponent } from './card/card.component';
     CommonModule,
     HomeRoutingModule,
     MaterialModule,
-    CoreModule
+    CoreModule,
+    FormsModule
   ],
   providers: [ MaterialModule ],
 })

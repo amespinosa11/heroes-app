@@ -3,16 +3,18 @@ import { CommonModule } from '@angular/common';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 
 import { MaterialModule } from '../../material.module';
+import { SearchPipe } from './searchPipe/search.pipe';
 
 @NgModule({
-  declarations: [ToolbarComponent],
+  declarations: [ToolbarComponent, SearchPipe],
   imports: [
     CommonModule,
     MaterialModule,
   ],
   providers: [ MaterialModule ],
   exports: [
-    ToolbarComponent
+    ToolbarComponent, 
+    SearchPipe
   ]
 })
 export class CoreModule { }

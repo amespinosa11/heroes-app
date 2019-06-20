@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCheckboxModule, MatIconModule, MatCardModule } from '@angular/material';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
       imports: [
@@ -11,7 +12,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
         MatCheckboxModule,
         MatToolbarModule,
         MatIconModule,
-        MatCardModule
+        MatCardModule,
+        MatInputModule
       ],
       exports: [
         //BrowserAnimationsModule,
@@ -20,7 +22,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
         MatCheckboxModule,
         MatToolbarModule,
         MatIconModule,
-        MatCardModule
+        MatCardModule,
+        MatInputModule
       ],
       providers: [ ],
 })
