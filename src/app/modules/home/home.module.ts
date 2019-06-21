@@ -8,9 +8,10 @@ import { MaterialModule } from '../../material.module';
 import { CoreModule } from '../core/core.module';
 import { CardComponent } from './card/card.component';
 import { FormsModule } from '@angular/forms';
+import { HeroeDetailComponent } from './heroe-detail/heroe-detail.component';
 
 @NgModule({
-  declarations: [HomeComponent, CardComponent],
+  declarations: [HomeComponent, CardComponent, HeroeDetailComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
